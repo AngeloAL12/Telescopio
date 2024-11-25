@@ -2,17 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Telescopio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Simulador de Telescopio</title>
 </head>
 <body>
+    <a href="teoria.html" id="how-it-works-btn">¿Cómo funciona?</a>
     <div id="form-container">
-        <h2 style="text-align: center; margin-bottom: 20px; color: #151717;">Configuración del Telescopio</h2>
+        <h2>Configuración del Telescopio</h2>
         <div id="controls">
-            <label>Focal del Telescopio (mm): <input type="number" id="focalTelescope" value="943"></label><br>
-            <label>Focal del Ocular (mm): <input type="number" id="focalEyepiece" value="10"></label><br>
-            <label>Campo Aparente (°): <input type="number" id="apparentField" value="99" max="99"></label><br>
+            <label>Focal del Telescopio (mm):
+                <input type="number" id="focalTelescope" value="943">
+            </label>
+            <label>Focal del Ocular (mm):
+                <input type="number" id="focalEyepiece" value="10">
+            </label>
+            <label>Campo Aparente (°):
+                <input type="number" id="apparentField" value="99" max="99">
+            </label>
             <label>Lente Barlow:
                 <select id="barlow">
                     <option value="1">No</option>
@@ -20,25 +28,29 @@
                     <option value="2">2x</option>
                     <option value="3">3x</option>
                 </select>
-            </label><br>
-            <label>Radio de Curvatura (mm): <input type="number" id="curvatureRadius" value="20"></label><br>
+            </label>
+            <label>Radio de Curvatura (mm):
+                <input type="number" id="curvatureRadius" value="20">
+            </label>
             <label>Objeto:
                 <select id="planet">
                     <option value="Luna.png">Luna</option>
                     <option value="Jupiter.png">Júpiter</option>
                     <option value="Saturno.jpg">Sistema de Saturno</option>
                 </select>
-            </label><br>
+            </label>
         </div>
     </div>
-
-    <div id="ggb-element"></div>
 
     <div class="canvas-container">
         <canvas id="canvas"></canvas>
     </div>
+    
+    <a href="geogebra.html" id="applet-full-screen">Visualizar rayos</a>
 
-    <!-- Incluye la biblioteca de GeoGebra -->
+    <div id="ggb-element"></div>
+
+    <!-- Inclusión de librerías y scripts -->
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <script src="script.js"></script>
     <script src="scriptG.js"></script>

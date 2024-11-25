@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;    .formula {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 15px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Centrar las fórmulas matemáticas */
+    .formula .MathJax {
+        margin: 1em 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#content-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    
+    padding: 2rem;
+    margin: 60px auto;
+}
+
+h1, h2 {
+    color: #3b82f6;
+}
+
+h2 {
+    color: #151717;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #3b82f6;
+    margin-top: 25px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-left: 20px;
+    color: #333;
+}
+
+#back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1000;
+}
+
+#back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+    background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+}
+
+#back-btn:active {
+    transform: translateY(1px);
+}
+
+.formula {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
